@@ -34,6 +34,15 @@ function Navigation(props) {
               </li>
               <li
                 class={`nav-item  ${
+                  props.location.pathname === "/blog" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/blog">
+                  Blog
+                </Link>
+              </li>
+              <li
+                class={`nav-item  ${
                   props.location.pathname === "/about" ? "active" : ""
                 }`}
               >
